@@ -1,0 +1,20 @@
+.App{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    color: #926239;
+    line-height: 1.6;
+
+    /*background-image: url('./img/cover.jpg');*/
+    background-image:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fflight-wallpapers&psig=AOvVaw3k8I8R4bKmsJ5va2xrVoqD&ust=1633252080108000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNj46KOwq_MCFQAAAAAdAAAAABAh');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;            /*flexible box (flex box) divides it content in the parts(here it is 3 part)*/
+    flex-direction: column;   /*bring the flex box in column way*/
+    justify-content: center;  /*bring the content to center*/
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+

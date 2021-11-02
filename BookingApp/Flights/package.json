@@ -1,0 +1,48 @@
+{
+  "name": "flights",
+  "version": "1.0.0",
+  "description": "",
+  "main": "flight-server.js",
+  "dependencies": {
+    "anymatch": "^3.1.1",
+    "clone-response": "^1.0.2",
+    "decompress-response": "^3.3.0",
+    "express": "^4.17.1",
+    "make-dir": "^3.1.0",
+    "mimic-response": "^1.0.1",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.0",
+    "nopt": "^1.0.10",
+    "normalize-path": "^3.0.0",
+    "normalize-url": "^4.5.0",
+    "p-cancelable": "^1.1.0",
+    "picomatch": "^2.2.2",
+    "prepend-http": "^2.0.0",
+    "pupa": "^2.0.1",
+    "readdirp": "^3.4.0",
+    "responselike": "^1.0.2",
+    "semver-diff": "^3.1.1",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "env-cmd": "^8.0.2",
+    "jest": "^26.4.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "env-cmd ./config/test.env/ jest --watch",
+    "start": "env-cmd ./config/dev.env/ nodemon flight-server"
+  },
+  "author": "mahesh",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
